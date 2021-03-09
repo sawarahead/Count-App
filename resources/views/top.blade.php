@@ -20,7 +20,7 @@
                 <div class='item'>食費:1000円</div>
 
             </div>
-            <div></div>
+            
         </div>
     </body>
 </html>

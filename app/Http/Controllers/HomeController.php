@@ -11,4 +11,14 @@ class HomeController extends Controller
     {
         return view('top');
     }
+    
+    public function getAddType()
+    {
+        return view('addType');
+    }
+    
+    public function getRecord()
+    {
+        return view('record');
+    }
 }

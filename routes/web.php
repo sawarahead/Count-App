@@ -15,3 +15,5 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class,'getTop']);
+Route::get('/addType',[HomeController::class,'getAddType']);
+Route::get('/record',[HomeController::class,'getRecord']);
