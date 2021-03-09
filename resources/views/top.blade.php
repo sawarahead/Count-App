@@ -17,8 +17,13 @@
         <div class='countWrapper'>
             <div class='monthly-count'>今月の会計</div>
             <div class='items'>
-                <div class='item'>食費:1000円</div>
-
+                <div class='item'>
+                    @foreach($types as $type)
+                        <div>
+                            <a href="/types/{{$type->id}}/edit">{{$type->typeName}}：</a>
+                        </div>
+                    @endforeach
+                </div>
             </div>
             
         </div>

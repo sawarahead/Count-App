@@ -10,11 +10,6 @@
         <header>
             <a href="/"><h1>Count-App</h1></a>
         </header>
-        <div class='record-content'>登録内容</div>
-        <div>生活費</div>
-        <form action='/' method='post'>
-            <input name='foods'>
-            <input type='submit' value='記録する'>
-        </form>
+        <div>{{$type->typeName}}</div>
     </body>
 </html>
