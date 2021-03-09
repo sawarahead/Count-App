@@ -12,9 +12,20 @@
         </header>
         <form action='/postAddType' method='post'>
             {{ csrf_field()}}
-            <div class='title'>追加する項目名</div>
+            <h2 class='title'>追加する項目名</h2>
             <input type='text' name='typeName'>
             <input type='submit' value='追加'>
         </form>
+        
+        <div class="added-types">
+            <div>現在登録済みの項目：</div>
+            
+            @foreach($types as $type)
+                <div class="type">
+                    ・{{$type->typeName}}
+                </div>
+            @endforeach
+            
+        </div>
     </body>
 </html>
