@@ -8,20 +8,19 @@ use App\Models\Type;
 
 class HomeController extends Controller
 {
-    public function getTop(Type $type)
+    public function Top(Type $type)
     {
-        return view('top')->with(['types'=>$type->get()]);
+        return view('Home.top')->with(['types'=>$type->get()]);
     }
     
     
-    
-    public function getRecord()
+    public function Record()
     {
-        return view('record');
+        return view('Record.record');
     }
     
-    public function getEdit(Type $type)
+    public function edit(Type $type)
     {
-        return view('edit')->with(['type'=>$type->get()]);
+        return view('Type.edit')->with(['type'=>$type]);
     }
 }

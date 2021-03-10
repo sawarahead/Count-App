@@ -8,15 +8,20 @@ use App\Http\Controllers\Controller;
 
 class TypeController extends Controller
 {
-    public function getAddType(Type $type)
+    public function create(Type $type)
     {
-        return view('addType')->with(['types'=>$type->get()]);
+        return view('Type.create')->with(['types'=>$type->get()]);
     }
     
-    public function postAddType(Request $request, Type $type)
+    public function store(Request $request, Type $type)
     {
         $input=$request['typeName'];
         $type->fill(['typeName'=>$input])->save();
         return redirect('/');
+    }
+    
+    public function show(Type $type)
+    {
+        return view('Type.show')->with(['type'=>$type]);
     }
 }

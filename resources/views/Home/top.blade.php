@@ -11,7 +11,7 @@
             <a href="/"><h1>Count-App</h1></a>
         </header>
         <div class='addWrapper'>
-            <a href="/addType">会計項目を追加する</a>
+            <a href="/types/create">会計項目を追加する</a>
             <a href="/record">金額を記録する</a>
         </div>
         <div class='countWrapper'>

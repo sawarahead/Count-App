@@ -10,7 +10,7 @@
         <header>
             <a href="/"><h1>Count-App</h1></a>
         </header>
-        <form action='/postAddType' method='post'>
+        <form action='/types/store' method='post'>
             {{ csrf_field()}}
             <h2 class='title'>追加する項目名</h2>
             <input type='text' name='typeName'>
