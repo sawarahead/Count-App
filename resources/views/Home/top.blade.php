@@ -20,7 +20,7 @@
                 <div class='item'>
                     @foreach($types as $type)
                         <div>
-                            <a href="/types/{{$type->id}}/edit">{{$type->typeName}}：</a>
+                            <a href="/types/{{$type->id}}">{{$type->typeName}}：</a>
                         </div>
                     @endforeach
                 </div>

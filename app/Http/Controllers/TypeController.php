@@ -24,4 +24,10 @@ class TypeController extends Controller
     {
         return view('Type.show')->with(['type'=>$type]);
     }
+    
+    public function delete(Type $type)
+    {
+        $type->delete();
+        return redirect('/');
+    }
 }

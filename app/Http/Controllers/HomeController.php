@@ -8,7 +8,7 @@ use App\Models\Type;
 
 class HomeController extends Controller
 {
-    public function Top(Type $type)
+    public function top(Type $type)
     {
         return view('Home.top')->with(['types'=>$type->get()]);
     }
